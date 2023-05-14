@@ -1,17 +1,26 @@
-// Press ⇧ twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
+    public static void division() {
+        System.out.println("______________________________");
+    }
     public static void main(String[] args) {
-        // Press ⌥⏎ with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press ⌃R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press ⌃D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing ⌘F8.
-            System.out.println("i = " + i);
-        }
+        Author lermontov = new Author("Михаил", "Лермонтов");
+        Author pushkin = new Author("Александр", "Пушкин");
+        Book maskarad = new Book("Маскарад", lermontov, 1835);
+        Book borisGodunov = new Book("Борис Годунов", pushkin, 1831);
+        division();
+        System.out.println("Название книги - " + maskarad.getName());
+        System.out.println("Автор - " + lermontov.getNameAuthor() + " " + lermontov.getSurnameAuthor());
+        System.out.println("Год публикации - " + maskarad.getYear());
+        division();
+        System.out.println("Название книги - " + borisGodunov.getName());
+        System.out.println("Автор - " + pushkin.getNameAuthor() + " " + pushkin.getSurnameAuthor());
+        System.out.println("Год публикации - " + borisGodunov.getYear());
+        division();
+        maskarad.setYear(1834);
+        System.out.println("Внесены изменения:");
+        System.out.println("Название книги - " + maskarad.getName());
+        System.out.println("Автор - " + lermontov.getNameAuthor() + " " + lermontov.getSurnameAuthor());
+        System.out.println("Год публикации - " + maskarad.getYear());
+        division();
     }
 }
