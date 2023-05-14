@@ -9,21 +9,18 @@ public class Main {
         Book borisGodunov = new Book("Борис Годунов", pushkin, 1831);
         division();
         System.out.println("Название книги - " + maskarad.getName());
-        System.out.println("Автор - " + maskarad.getAuthor());
+        System.out.println("Автор - " + lermontov.getNameAuthor() + " " + lermontov.getSurnameAuthor());
         System.out.println("Год публикации - " + maskarad.getYear());
         division();
         System.out.println("Название книги - " + borisGodunov.getName());
-        System.out.println("Автор - " + borisGodunov.getAuthor());
+        System.out.println("Автор - " + pushkin.getNameAuthor() + " " + pushkin.getSurnameAuthor());
         System.out.println("Год публикации - " + borisGodunov.getYear());
         division();
         maskarad.setYear(1834);
         System.out.println("Внесены изменения:");
         System.out.println("Название книги - " + maskarad.getName());
-        System.out.println("Автор - " + maskarad.getAuthor());
+        System.out.println("Автор - " + lermontov.getNameAuthor() + " " + lermontov.getSurnameAuthor());
         System.out.println("Год публикации - " + maskarad.getYear());
         division();
-
-
-
     }
 }
